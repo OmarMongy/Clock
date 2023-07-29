@@ -6,8 +6,9 @@ This repository contains the Verilog hardware description language implementatio
 
 ## Contents:
 
-1. `clock_module.v`: Verilog source file containing the implementation of the 12-hour clock module.
-
+1. `Clock.v`: Verilog source file containing the implementation of the 12-hour clock module and the circuit schematic.
+2. `Clock_tb.v`: Verilog sim file containing the testbench of the 12-hour clock module and the simulation results.
+   
 ## Clock Module Implementation: 
 
 The `clock_module.v` file includes the following components:
