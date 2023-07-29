@@ -15,7 +15,7 @@ This repository contains the Verilog HDL implementation of a 12-hour clock modul
    
 ## Clock Module Implementation: 
 
-The `clock_module.v` file includes the following components:
+The `Clock.v` file includes the following components:
 
 ## Inputs:
 - `clk`: Clock input to synchronize the clock's operations.
