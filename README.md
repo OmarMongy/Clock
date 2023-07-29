@@ -2,7 +2,7 @@
 
 ## Description:
 
-This repository contains the Verilog hardware description language implementation of a 12-hour clock module. The module generates outputs for hours, minutes, seconds, and the period indicator (AM or PM) based on the provided clock signal. The clock operates in a 12-hour format and updates the time with each clock cycle.
+This repository contains the Verilog HDL implementation of a 12-hour clock module. The module generates outputs for hours, minutes, seconds, and the period indicator (AM or PM) based on the provided clock signal. The clock operates in a 12-hour format and updates the time with each clock cycle.
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6a4flyvyYd9xBwwuWrP0E4Z28nD5q_jZc_AB40-LxafHuzt5wPfDbdkAzJ_h9yaS7iTs&usqp=CAU" alt="Digial Clock">
