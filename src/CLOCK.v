@@ -39,7 +39,7 @@ module CLOCK (
                 
         end
  	//next state logic
-        always @(*)
+always @(*)
         begin
             S_next = (S_reg == 8'd59) ? 8'd0 : S_reg + 1;
             M_next = (S_reg == 8'd59) ? ((M_reg == 8'd59) ? 8'd0 : M_reg + 1) : M_reg;
@@ -47,18 +47,23 @@ module CLOCK (
             if (S_reg == 8'd59 && M_reg == 8'd59) begin
                 if (H_reg == 8'd12) begin
                     H_next = 8'd1; // Reset to 1 after 12 hours (12 -> 1)
-                    pm_next = ~pm_reg; // Toggle AM/PM
                 end
                 else begin
                     H_next = H_reg + 1; 
-                    pm_next = pm_reg; 
                 end
             end
             else begin
                 H_next = H_reg; 
-                pm_next = pm_reg; 
             end
         end
+        
+always @(*)
+    begin
+        if(S_reg == 8'd59 && M_reg == 8'd59 && H_reg == 8'd11 )
+             pm_next = ~pm_reg;
+         else
+            pm_next = pm_reg;
+    end
 
 //output logic
 
