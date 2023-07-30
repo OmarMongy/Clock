@@ -19,7 +19,7 @@ The `Clock.v` file includes the following components:
 
 ## Inputs:
 - `clk`: Clock input to synchronize the clock's operations.
-- `reset`: Asynchronous reset input to reset the clock to the initial state (12:00:00 AM).
+- `reset`: Asynchronous reset input to reset the clock to the initial state (6:00:00 AM).
 - `ena`: Enable input to control whether the clock increments or not.
 
 ## Outputs:
