@@ -23,7 +23,7 @@ The `Clock.v` file includes the following components:
 - `ena`: Enable input to control whether the clock increments or not.
 
 ## Outputs:
-- `pm`: Output representing the period indicator (1 for AM, 0 for PM).
+- `pm`: Output representing the period indicator (0 for AM, 1 for PM).
 - `hh`: Output for the hours (in 8-bit format).
 - `mm`: Output for the minutes (in 8-bit format).
 - `ss`: Output for the seconds (in 8-bit format).
