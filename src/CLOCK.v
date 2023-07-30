@@ -17,10 +17,10 @@ module CLOCK (
         begin
             if (reset)
                 begin
-                   H_reg <= 8'd12;
+                   H_reg <= 8'd6;
                    M_reg <= 8'd0;
                    S_reg <= 8'd0;
-                   pm_reg <= 1'b1;
+                   pm_reg <= 1'b0;
                 end
             else if (ena)
                 begin
