@@ -12,7 +12,7 @@ module CLOCK (
     reg [7:0] S_reg, S_next;
     reg pm_reg, pm_next;
  
-    //state logic
+    //state reg
     always @(posedge clk , posedge reset)
         begin
             if (reset)
